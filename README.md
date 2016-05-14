@@ -1,23 +1,23 @@
-Java examples for studying purposes
+Примеры Java-программ для обучающих целей
 =============
 
-##Solved problems from Blinov:
+##Решенные задачи из Блинова:
 
-0. Chapter 1
-1. Chapter 2
-2. Chapter 3
-    1. Variant A
+0. Глава 1
+1. Глава 2
+2. Глава 3
+    1. Вариант A
         * Student
         * Patient
-    2. Variant B
+    2. Вариант B
         * Line
-4. Chapter 4
-    1. Variant A
+4. Глава 4
+    1. Вариант A
         * Text
-5. Chapter 5
-6. Chapter 6
-7. Chapter 7
-8. Chapter 8
-9. Chapter 9
-10. Chapter 10
-11. Chapter 11
+5. Глава 5
+6. Глава 6
+7. Глава 7
+8. Глава 8
+9. Глава 9
+10. Глава 10
+11. Глава 11
