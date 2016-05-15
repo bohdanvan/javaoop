@@ -1,4 +1,4 @@
-package com.bvan.javaoop.samples.oop.shape;
+package com.bvan.javaoop.sample.oop.shape;
 
 /**
  * @author bvanchuhov

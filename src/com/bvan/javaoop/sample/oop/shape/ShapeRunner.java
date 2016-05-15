@@ -1,4 +1,4 @@
-package com.bvan.javaoop.samples.oop.shape;
+package com.bvan.javaoop.sample.oop.shape;
 
 import java.util.ArrayList;
 import java.util.List;
