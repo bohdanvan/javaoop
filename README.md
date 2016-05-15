@@ -27,3 +27,7 @@
     * Shape
 1. Collection
     * Train
+
+##Пример курсового проект:
+* Person
+* PersonComparator
