@@ -25,3 +25,5 @@
 ##Примеры кода:
 0. OOP
     * Shape
+1. Collection
+    * Train
