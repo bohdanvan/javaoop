@@ -27,6 +27,7 @@
     * Shape
 1. Collection
     * Train
+    * Set And Map
 
 ##Пример курсового проект:
 * Person
