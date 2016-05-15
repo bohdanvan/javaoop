@@ -17,9 +17,12 @@ public class Person implements Serializable {
     private int age;
 
     public Person(int id, String name, int age) {
+        Args.notEmpty(name, "name");
+        checkAge(age);
+
         this.id = id;
-        this.name = Args.notEmpty(name, "name");
-        this.age = Args.notNegative(age, "age");
+        this.name = name;
+        this.age = age;
     }
 
     public Person(String name, int age) {
@@ -28,6 +31,16 @@ public class Person implements Serializable {
 
     public Person() {
         this.id = RandomIdGenerator.generateInt();
+    }
+
+    private void checkAge(int age) {
+        if (!isAge(age)) {
+            throw new IllegalArgumentException("Illegal age: " + age);
+        }
+    }
+
+    private boolean isAge(int age) {
+        return age > 0 && age <= 120;
     }
 
     public int getId() {
@@ -43,7 +56,8 @@ public class Person implements Serializable {
     }
 
     public Person setName(String name) {
-        this.name = Args.notEmpty(name, "name");
+        Args.notEmpty(name, "name");
+        this.name = name;
         return this;
     }
 
@@ -52,7 +66,8 @@ public class Person implements Serializable {
     }
 
     public Person setAge(int age) {
-        this.age = Args.notNegative(age, "age");
+        checkAge(age);
+        this.age = age;
         return this;
     }
 
