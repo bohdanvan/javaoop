@@ -89,14 +89,15 @@ public class PersonIOUtils {
 
         String[] tokens = s.split(CSV_DELIMITER);
 
-        String name = tokens[0];
-
-        if (!Validator.isInt(tokens[1])) {
+        if (!Validator.isInt(tokens[0]) || !Validator.isInt(tokens[2])) {
             return null;
         }
-        int age = Integer.parseInt(tokens[1]);
 
-        return new Person(name, age);
+        int id = Integer.parseInt(tokens[0]);
+        String name = tokens[1];
+        int age = Integer.parseInt(tokens[2]);
+
+        return new Person(id, name, age);
     }
 
     // Бинарный вывод
