@@ -25,6 +25,7 @@
 ##Примеры кода:
 0. OOP
     * Shape
+    * File System (Плохой и хороший варианты)
 1. Collection
     * Train
     * Set And Map
