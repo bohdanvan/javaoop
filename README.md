@@ -29,6 +29,9 @@
 1. Collection
     * Train
     * Set And Map
+2. Multithreading
+    * Interruption
+    * Shared Resource Task. Blocking
 
 ##Пример курсового проект:
 * Person
