@@ -1,5 +1,6 @@
 package com.bvan.javaoop.sample.multithreading.shared_resource.chatroom;
 
+import com.bvan.javaoop.sample.multithreading.annotations.GuardedBy;
 import com.bvan.javaoop.sample.multithreading.annotations.ThreadSafe;
 
 /**
@@ -8,6 +9,7 @@ import com.bvan.javaoop.sample.multithreading.annotations.ThreadSafe;
 @ThreadSafe
 public class ChatRoomWithSynchronizedBlock implements ChatRoom {
 
+    @GuardedBy("this")
     private final StringBuilder room = new StringBuilder(); // unsafe resource
 
     @Override
