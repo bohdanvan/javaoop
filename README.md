@@ -27,6 +27,7 @@
     * Shape
     * File System (Плохой и хороший варианты)
 1. Collection
+    * Sorting
     * Train
     * Set And Map
 2. Multithreading
