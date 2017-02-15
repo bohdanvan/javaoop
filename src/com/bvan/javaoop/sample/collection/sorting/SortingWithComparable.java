@@ -8,9 +8,7 @@ import java.util.*;
 public class SortingWithComparable {
 
     public static void main(String[] args) {
-        List<Integer> list = new ArrayList<>(
-                Arrays.asList(200, 10, 50, 20, 10)
-        );
+        List<Integer> list = Arrays.asList(200, 10, 50, 20, 10);
         System.out.println(list);
 
         Collections.sort(list);
