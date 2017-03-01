@@ -28,6 +28,7 @@ public class FactorialTask implements Runnable {
             Thread.sleep(TimeUnit.SECONDS.toMillis(1));
         } catch (InterruptedException e) {
             lastAction();
+            Thread.currentThread().interrupt();
             return;
         }
 
@@ -38,7 +39,7 @@ public class FactorialTask implements Runnable {
             if (i % 10_000 == 0) {
                 ThreadUtils.println("Step " + i);
 
-                if (Thread.interrupted()) {
+                if (Thread.currentThread().isInterrupted()) {
                     lastAction();
                     return;
                 }

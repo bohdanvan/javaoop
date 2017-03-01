@@ -9,7 +9,7 @@ import com.bvan.javaoop.sample.multithreading.annotations.ThreadSafe;
 @ThreadSafe
 public class ChatRoomWithSynchronizedBlock implements ChatRoom {
 
-    @GuardedBy("this")
+    @GuardedBy("itself")
     private final StringBuilder room = new StringBuilder(); // unsafe resource
 
     @Override

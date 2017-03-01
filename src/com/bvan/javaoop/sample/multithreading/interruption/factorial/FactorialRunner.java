@@ -8,11 +8,11 @@ import java.util.concurrent.TimeUnit;
  */
 public class FactorialRunner {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         Thread thread = new Thread(new FactorialTask(1_000_000));
         thread.start();
 
-        ThreadUtils.sleep(TimeUnit.SECONDS.toMillis(3));
+        Thread.sleep(TimeUnit.SECONDS.toMillis(3));
 
         thread.interrupt();
 
