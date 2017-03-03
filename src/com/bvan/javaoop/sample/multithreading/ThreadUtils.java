@@ -11,11 +11,16 @@ public class ThreadUtils {
         System.out.println(Thread.currentThread() + ": " + msg);
     }
 
-    public static void sleep(long millis) {
+    /**
+     * @return has thread been interrupted?
+     */
+    public static boolean sleep(long millis) {
         try {
             Thread.sleep(millis);
+            return false;
         } catch (InterruptedException e) {
             Thread.currentThread().interrupt();
+            return true;
         }
     }
 }
