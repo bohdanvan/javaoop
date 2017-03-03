@@ -13,7 +13,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class FactorialTask implements Runnable {
 
-    private int n;
+    private final int n;
 
     public FactorialTask(int n) {
         if (n < 0) {
