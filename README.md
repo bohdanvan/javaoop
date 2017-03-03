@@ -31,10 +31,6 @@
     * Train
     * Set And Map
 2. Multithreading
+    * Creation
     * Interruption
     * Shared Resource Task. Blocking
-
-##Пример курсового проект:
-* Person
-* PersonComparator
-* PersonIOUtils

@@ -7,4 +7,4 @@
  * d)  список учебной группы.
  * @author bvanchuhov
  */
-package com.bvan.javaoop.blinov.ch3.a.student;
+package com.bvan.javaoop.blinov.ch3.a.student_oop;

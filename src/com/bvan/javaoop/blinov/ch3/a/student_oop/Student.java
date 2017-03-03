@@ -1,4 +1,4 @@
-package com.bvan.javaoop.blinov.ch3.a.student;
+package com.bvan.javaoop.blinov.ch3.a.student_oop;
 
 import java.util.Objects;
 

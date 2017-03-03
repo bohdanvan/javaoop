@@ -1,18 +1,18 @@
 package com.bvan.javaoop.blinov.ch4.a.text;
 
 import com.bvan.common.Args;
-import com.bvan.common.Joiner;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.StringJoiner;
 
 /**
  * @author bvanchuhov
  */
 public class Sentence {
 
-    private List<Word> words = new ArrayList<>();
+    private final List<Word> words = new ArrayList<>();
 
     public Sentence() {
     }
@@ -39,6 +39,10 @@ public class Sentence {
 
     @Override
     public String toString() {
-        return Joiner.join(" ", words) + ".";
+        StringJoiner joiner = new StringJoiner(" ");
+        for (Word word : words) {
+            joiner.add(word.toString());
+        }
+        return joiner.toString() + ".";
     }
 }

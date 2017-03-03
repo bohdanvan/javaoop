@@ -5,4 +5,4 @@
  * b) список пациентов, номер медицинской карты которых находится в за-данном интервале.
  * @author bvanchuhov
  */
-package com.bvan.javaoop.blinov.ch3.a.patient;
+package com.bvan.javaoop.blinov.ch3.a.patient_pure_oop;

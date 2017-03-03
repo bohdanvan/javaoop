@@ -1,11 +1,11 @@
 package com.bvan.javaoop.blinov.ch4.a.text;
 
 import com.bvan.common.Args;
-import com.bvan.common.Joiner;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
+import java.util.StringJoiner;
 
 /**
  * @author bvanchuhov
@@ -13,7 +13,7 @@ import java.util.Objects;
 public class Text {
 
     private final Sentence header;
-    private List<Sentence> sentences = new ArrayList<>();
+    private final List<Sentence> sentences = new ArrayList<>();
 
     public Text(Sentence header) {
         this.header = Args.notNull(header, "header");
@@ -46,7 +46,11 @@ public class Text {
 
     @Override
     public String toString() {
+        StringJoiner joiner = new StringJoiner(" ");
+        for (Sentence sentence : sentences) {
+            joiner.add(sentence.toString());
+        }
         return header.toString() + '\n' +
-                Joiner.join(" ", sentences);
+                joiner.toString();
     }
 }

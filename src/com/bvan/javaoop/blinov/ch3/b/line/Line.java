@@ -9,6 +9,7 @@ import java.util.Objects;
 /**
  * Immutable line.
  * y = k * x + b
+ *
  * @author bvanchuhov
  */
 public final class Line {
@@ -48,8 +49,6 @@ public final class Line {
         return DoubleUtils.doubleEquals(this.k, other.k, 1.e-5);
     }
 
-    //----- Getters -----
-
     public double getK() {
         return k;
     }
@@ -74,6 +73,6 @@ public final class Line {
 
     @Override
     public String toString() {
-        return MessageFormat.format("y = {0} * x + {1}", k, b);
+        return "y = " + k + " * x + " + b;
     }
 }
