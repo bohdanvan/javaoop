@@ -1,4 +1,4 @@
-package com.bvan.javaoop.sample.collection.set_map.persons_age_map;
+package com.bvan.javaoop.sample.collection.set_map.persons_age;
 
 import com.bvan.javaoop.sample.common.Person;
 
@@ -11,13 +11,13 @@ public class PersonsAgesMapRunner {
 
     public static void main(String[] args) {
         List<Person> persons = createPersons();
-        PersonsAgeMap personsAgeMap = new PersonsAgeMap(persons);
+        PersonsAge personsAge = new PersonsAge(persons);
 
-        System.out.println("People with age=25: " + personsAgeMap.getByAge(25));
-        System.out.println("People with age=30: " + personsAgeMap.getByAge(30));
-        System.out.println("People with age=100: " + personsAgeMap.getByAge(100));
+        System.out.println("People with age=25: " + personsAge.getByAge(25));
+        System.out.println("People with age=30: " + personsAge.getByAge(30));
+        System.out.println("People with age=100: " + personsAge.getByAge(100));
 
-        System.out.println("People with age in [25, 30]: " + personsAgeMap.getByAges(25, 30));
+        System.out.println("People with age in [25, 30]: " + personsAge.getByAges(25, 30));
         System.out.println();
     }
 

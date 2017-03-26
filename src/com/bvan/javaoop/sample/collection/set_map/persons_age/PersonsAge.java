@@ -1,4 +1,4 @@
-package com.bvan.javaoop.sample.collection.set_map.persons_age_map;
+package com.bvan.javaoop.sample.collection.set_map.persons_age;
 
 import com.bvan.javaoop.sample.common.Person;
 
@@ -7,14 +7,14 @@ import java.util.*;
 /**
  * @author bvanchuhov
  */
-public class PersonsAgeMap {
+public class PersonsAge {
 
     private final SortedMap<Integer, List<Person>> ageToPersonsMap = new TreeMap<>();
 
-    public PersonsAgeMap() {
+    public PersonsAge() {
     }
 
-    public PersonsAgeMap(Iterable<Person> persons) {
+    public PersonsAge(Iterable<Person> persons) {
         addPersons(persons);
     }
 
