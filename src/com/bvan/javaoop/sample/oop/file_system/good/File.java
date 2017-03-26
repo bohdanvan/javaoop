@@ -3,7 +3,7 @@ package com.bvan.javaoop.sample.oop.file_system.good;
 /**
  * @author bvanchuhov
  */
-public class File extends AbstractFSItem {
+public class File extends NamedFSItem {
 
     private int size;
 

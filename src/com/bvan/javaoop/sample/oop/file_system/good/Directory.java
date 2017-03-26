@@ -6,9 +6,9 @@ import java.util.List;
 /**
  * @author bvanchuhov
  */
-public class Directory extends AbstractFSItem {
+public class Directory extends NamedFSItem {
 
-    private List<FSItem> items = new ArrayList<>();
+    private final List<FSItem> items = new ArrayList<>();
 
     public Directory() {
     }

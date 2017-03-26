@@ -6,6 +6,5 @@ package com.bvan.javaoop.sample.oop.file_system.good;
 public interface FSItem {
 
     int getSize();
-
     String getName();
 }

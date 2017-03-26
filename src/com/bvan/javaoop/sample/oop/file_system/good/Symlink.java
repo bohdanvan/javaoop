@@ -3,7 +3,7 @@ package com.bvan.javaoop.sample.oop.file_system.good;
 /**
  * @author bvanchuhov
  */
-public class Symlink extends AbstractFSItem {
+public class Symlink extends NamedFSItem {
 
     private FSItem item;
 

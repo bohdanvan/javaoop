@@ -3,14 +3,14 @@ package com.bvan.javaoop.sample.oop.file_system.good;
 /**
  * @author bvanchuhov
  */
-public abstract class AbstractFSItem implements FSItem {
+public abstract class NamedFSItem implements FSItem {
 
     private String name;
 
-    public AbstractFSItem() {
+    public NamedFSItem() {
     }
 
-    public AbstractFSItem(String name) {
+    public NamedFSItem(String name) {
         this.name = name;
     }
 
@@ -22,4 +22,7 @@ public abstract class AbstractFSItem implements FSItem {
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public abstract int getSize();
 }
