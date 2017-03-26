@@ -16,9 +16,12 @@ public class SortedSetSample {
         System.out.println(sortedSet);
 
         SortedSet<Integer> subSet = sortedSet.subSet(8, 18);
-        System.out.println("[8..18]:\t" + subSet);
+        System.out.println("[8..18]: " + subSet);
 
-        System.out.println("[head..12]:\t" + sortedSet.headSet(12));
-        System.out.println("[12..tail]:\t" + sortedSet.tailSet(12));
+        System.out.println("[head..12]: " + sortedSet.headSet(12));
+        System.out.println("[12..tail]: " + sortedSet.tailSet(12));
+
+        System.out.println("min: " + sortedSet.first());
+        System.out.println("max: " + sortedSet.last());
     }
 }
