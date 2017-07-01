@@ -26,6 +26,7 @@
 0. OOP
     * Shape
     * File System (Плохой и хороший варианты)
+    * Shop
 1. Collection
     * Sorting
     * Train
