@@ -26,6 +26,7 @@
 0. OOP
     * Shape
     * File System (Плохой и хороший варианты)
+    * Shop
 1. Enum
 2. Exceptions
 3. Collection
