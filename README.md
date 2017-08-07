@@ -26,11 +26,13 @@
 0. OOP
     * Shape
     * File System (Плохой и хороший варианты)
-1. Collection
+1. Enum
+2. Exceptions
+3. Collection
     * Sorting
     * Train
     * Set And Map
-2. Multithreading
+4. Multithreading
     * Creation
     * Interruption
     * Shared Resource Task. Blocking
