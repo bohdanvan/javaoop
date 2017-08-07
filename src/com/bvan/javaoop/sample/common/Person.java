@@ -5,16 +5,13 @@ import com.bvan.common.Args;
 /**
  * @author bvanchuhov
  */
-public class Person {
+public final class Person {
 
     private static int nextInt = 0;
 
-    protected int id = nextInt++;
-    protected String name;
-    protected int age;
-
-    public Person() {
-    }
+    private int id = nextInt++;
+    private String name;
+    private int age;
 
     public Person(String name, int age) {
         Args.notEmpty(name, "name");
@@ -46,20 +43,8 @@ public class Person {
         return name;
     }
 
-    public Person setName(String name) {
-        Args.notEmpty(name, "name");
-        this.name = name;
-        return this;
-    }
-
     public int getAge() {
         return age;
-    }
-
-    public Person setAge(int age) {
-        checkAge(age);
-        this.age = age;
-        return this;
     }
 
     @Override
