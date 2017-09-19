@@ -1,6 +1,6 @@
 package com.bvan.javaoop.sample.oop.shop;
 
-import java.time.LocalTime;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -12,8 +12,8 @@ public class Order {
 
     private final String id = UUID.randomUUID().toString();
     private final List<OrderItem> items = new ArrayList<>();
-    private final LocalTime createdTime = LocalTime.now();
-    private LocalTime payedTime;
+    private final LocalDateTime createdTime = LocalDateTime.now();
+    private LocalDateTime payedTime;
 
     public long getPrice() {
         long price = 0;
@@ -27,7 +27,7 @@ public class Order {
         items.add(new OrderItem(product, count));
     }
 
-    public void setPayedTime(LocalTime payedTime) {
+    public void setPayedTime(LocalDateTime payedTime) {
         this.payedTime = payedTime;
     }
 
@@ -35,11 +35,11 @@ public class Order {
         return id;
     }
 
-    public LocalTime getCreatedTime() {
+    public LocalDateTime getCreatedTime() {
         return createdTime;
     }
 
-    public LocalTime getPayedTime() {
+    public LocalDateTime getPayedTime() {
         return payedTime;
     }
 

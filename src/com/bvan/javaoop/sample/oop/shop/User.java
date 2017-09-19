@@ -1,6 +1,6 @@
 package com.bvan.javaoop.sample.oop.shop;
 
-import java.time.LocalTime;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.UUID;
@@ -33,7 +33,7 @@ public class User {
             return false;
         }
 
-        currentOrder.setPayedTime(LocalTime.now());
+        currentOrder.setPayedTime(LocalDateTime.now());
         completedOrders.add(currentOrder);
 
         currentOrder = new Order();

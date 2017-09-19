@@ -9,9 +9,7 @@ public class OrderItem {
     private int count;
 
     public OrderItem(Product product, int count) {
-        if (count < 0) {
-            throw new IllegalArgumentException("Illegal count: " + count);
-        }
+        checkCount(count);
 
         this.product = product;
         this.count = count;
@@ -30,11 +28,21 @@ public class OrderItem {
     }
 
     public void decCount() {
+        if (count == 0) {
+            throw new IllegalStateException("Can't decrease zero count");
+        }
         count--;
     }
 
     public void setCount(int count) {
+        checkCount(count);
         this.count = count;
+    }
+
+    private void checkCount(int count) {
+        if (count < 0) {
+            throw new IllegalArgumentException("Illegal count: " + count);
+        }
     }
 
     @Override
