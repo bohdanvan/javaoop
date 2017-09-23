@@ -32,7 +32,7 @@ public final class Factorial {
      */
     private static void checkFactorialArg(int n) {
         if (n < 0) {
-            throw new IllegalStateException("negative factorial arg: " + n);
+            throw new IllegalArgumentException("negative factorial arg: " + n);
         }
     }
 }
