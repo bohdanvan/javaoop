@@ -37,7 +37,6 @@ public class StudentRunner {
         bob.setCourse(4);
         bob.setGroup(5);
 
-
         Students students = new Students();
         students.add(john);
         students.add(bob);
