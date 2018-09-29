@@ -1,5 +1,6 @@
 package com.bvan.javaoop.blinov.ch3.a.student_oop;
 
+import java.time.LocalDate;
 import java.util.Objects;
 
 /**
@@ -13,17 +14,20 @@ public class Student {
     private String name;
     private String surname;
     private String patronymic;
-    private long birthDate;
+    private LocalDate birthDate;
     private String address;
     private String phoneNumber;
     private String faculty;
     private int course;
     private int group;
 
-    public Student() {
+    public Student(String name, String surname) {
+        this.name = name;
+        this.surname = surname;
     }
 
     //----- Getters and Setters -----
+
 
     public int getId() {
         return id;
@@ -33,94 +37,85 @@ public class Student {
         return name;
     }
 
-    public Student setName(String name) {
+    public void setName(String name) {
         this.name = name;
-        return this;
     }
 
     public String getSurname() {
         return surname;
     }
 
-    public Student setSurname(String surname) {
+    public void setSurname(String surname) {
         this.surname = surname;
-        return this;
     }
 
     public String getPatronymic() {
         return patronymic;
     }
 
-    public Student setPatronymic(String patronymic) {
+    public void setPatronymic(String patronymic) {
         this.patronymic = patronymic;
-        return this;
     }
 
-    public long getBirthDate() {
+    public LocalDate getBirthDate() {
         return birthDate;
     }
 
-    public Student setBirthDate(long birthDate) {
+    public void setBirthDate(LocalDate birthDate) {
         this.birthDate = birthDate;
-        return this;
     }
 
     public String getAddress() {
         return address;
     }
 
-    public Student setAddress(String address) {
+    public void setAddress(String address) {
         this.address = address;
-        return this;
     }
 
     public String getPhoneNumber() {
         return phoneNumber;
     }
 
-    public Student setPhoneNumber(String phoneNumber) {
+    public void setPhoneNumber(String phoneNumber) {
         this.phoneNumber = phoneNumber;
-        return this;
     }
 
     public String getFaculty() {
         return faculty;
     }
 
-    public Student setFaculty(String faculty) {
+    public void setFaculty(String faculty) {
         this.faculty = faculty;
-        return this;
     }
 
     public int getCourse() {
         return course;
     }
 
-    public Student setCourse(int course) {
+    public void setCourse(int course) {
         this.course = course;
-        return this;
     }
 
     public int getGroup() {
         return group;
     }
 
-    public Student setGroup(int group) {
+    public void setGroup(int group) {
         this.group = group;
-        return this;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (!(o instanceof Student)) return false;
+        if (o == null || getClass() != o.getClass()) return false;
         Student student = (Student) o;
-        return birthDate == student.birthDate &&
-                course == student.course &&
+        return course == student.course &&
                 group == student.group &&
                 Objects.equals(name, student.name) &&
                 Objects.equals(surname, student.surname) &&
                 Objects.equals(patronymic, student.patronymic) &&
+                Objects.equals(birthDate, student.birthDate) &&
                 Objects.equals(address, student.address) &&
                 Objects.equals(phoneNumber, student.phoneNumber) &&
                 Objects.equals(faculty, student.faculty);
@@ -133,7 +128,8 @@ public class Student {
 
     @Override
     public String toString() {
-        return "Student{" + "id=" + id +
+        return "Student{" +
+                "id=" + id +
                 ", name='" + name + '\'' +
                 ", surname='" + surname + '\'' +
                 ", patronymic='" + patronymic + '\'' +

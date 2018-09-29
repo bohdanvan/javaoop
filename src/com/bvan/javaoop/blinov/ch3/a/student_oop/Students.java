@@ -1,5 +1,6 @@
 package com.bvan.javaoop.blinov.ch3.a.student_oop;
 
+import java.time.LocalDate;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Objects;
@@ -37,10 +38,10 @@ public class Students {
         return results;
     }
 
-    public Students findByBirthDate(long minBirthDate) {
+    public Students findByBirthDate(LocalDate minBirthDate) {
         Students results = new Students();
         for (Student student : students) {
-            if (student.getBirthDate() >= minBirthDate) {
+            if (student.getBirthDate().isAfter(minBirthDate)) {
                 results.add(student);
             }
         }
